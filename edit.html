@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title></title>
+    <style>
+        .cont {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-frame-bar">
+        <h1 class="header"></h1>
+        <div class="buttons">
+            <button class="minimize-btn" onclick="appRegion('minimize')"></button>
+            <button class="fullscreen-btn" disabled onclick="appRegion('fullscreen')"></button>
+            <button class="close-btn" onclick="appRegion('close')"></button>
+        </div>
+
+
+    </div>
+    <div class="cont">
+        <input type="text" class="form-control mr-2 ml-1" id="editValue" />
+        <button class="btn btn-success mr-1" id="editBtn">Düzenle</button>
+    </div>
+    <script src="assets/edit.js"></script>
+</body>
+
+</html>

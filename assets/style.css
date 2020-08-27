@@ -1,0 +1,111 @@
+body {
+    background-color: #dedede;
+    overflow: hidden;
+}
+
+#clearBtn {
+    word-wrap: none;
+}
+
+.app-frame-bar {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: #acacac;
+    -webkit-app-region: drag;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-frame-bar .buttons {
+    width: 75px;
+    pointer-events: all;
+    -webkit-app-region: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background-color: #dedede;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #acacac;
+    border-radius: 10px;
+}
+
+.todo-container {
+    overflow-y: auto;
+    height: 470px;
+    width: 700px;
+}
+
+.app-frame-bar .buttons button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.app-frame-bar .buttons button:disabled {
+    filter: grayscale(75%);
+}
+
+.app-frame-bar .fullscreen-btn {
+    background-color: #2dcd45;
+}
+
+.app-frame-bar .minimize-btn {
+    background-color: #ffbd2d;
+}
+
+.app-frame-bar .close-btn {
+    background-color: #ff6058;
+}
+
+.app-frame-bar .update-container {
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+}
+
+.main-container {
+    z-index: 0;
+}
+
+.todo-item {
+    background-color: #582E48!important;
+}
+
+.navbar-brand {
+    user-select: none;
+}
+
+.form-control {
+    max-width: 400px;
+}
